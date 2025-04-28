@@ -1,3 +1,64 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
 }
+main{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 30px;
+    width: 500px;
+    text-align: center;
+}
+.inputNombre{
+    margin-top: 40px;
+    text-align: left;
+}
+.textNombre {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: medium;
+    padding-left: 10px;
+    left: 50px;
+    width: 493px;
+    height: 30px;
+}
+.botonComenzar{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 50px;
+}
+@media (max-width: 600px){
+    main{
+        width: 300px;
+        margin-top: 20%;
+    }
+    .inputNombre{
+        margin-top: 10%;
+    }
+    .textNombre {
+        width: 286px;
+    }
+    .botonComenzar{
+        width: 300px;
+    }
+}
+@media (max-width: 400px){
+    main{
+        width: 150px;
+        margin-top: 20%;
+    }
+    .inputNombre{
+        margin-top: 10%;
+    }
+    .textNombre {
+        width: 136px;
+    }
+    .botonComenzar{
+        width: 150px;
+    }
+}
