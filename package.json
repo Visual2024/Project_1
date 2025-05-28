@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Visual2024/Project_1/issues"
   },
-  "homepage": "https://github.com/Visual2024/Project_1#readme"
+  "homepage": "https://github.com/Visual2024/Project_1#readme",
+  "dependencies": {
+    "proyecto_1": "file:"
+  }
 }
