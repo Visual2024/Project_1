@@ -43,3 +43,59 @@ margin-bottom: 10px;  /*Para poner un espacio especifico*/
   color: white;
   background-color: black;
 }
+
+
+    /* body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+    }
+
+    .card h1 {
+      margin: 0;
+      font-size: 24px; /*Para poner un tamaño de letra especifico
+      color: #333; Para asignar color especifico a la letra
+    }
+
+    .card p {
+      color: #666;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+
+    .emoji {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      background-color: #000;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .button:hover {
+      background-color: #333;
+    } */
