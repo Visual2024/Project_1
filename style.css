@@ -1,101 +1,117 @@
-body{
-    display: flex;
-    align-items: center;     /* Los primeros 4 renglones*/
-    justify-content: center;   /*son para centrar la informacion*/
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif; /* Para poner tipo de letra*/
-    margin: 0%; 
-    background-color: rgb(30, 68, 134);
-} 
-main{
-display: flex;
-background-color: white; /*Escoger color*/
-/*border: 2px solid black;*/  /*Para poner un borde sencillo*/
-align-items: center;
-justify-content: center;
-border-radius: 15px; /*Para colocar un borde mas cilindricp*/
-padding: 30px 20px; /*Poner un tamaño al espacion*/
-text-align: center; /*Alinear el texto*/ 
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*Para hacer un borde con sombra*/
-max-width: 400px; /*Para poner un tamaño de ancho*/ 
+body {
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
 }
 
-.emoji {
-font-size: 60px;  /*Para poner tamaño especifico*/
-margin-bottom: 10px;  /*Para poner un espacio especifico*/
+.container-header {
+    padding: 5px 10px;
+    background-color: rgb(224, 175, 175);
+    border-radius: 17px;
+
+    & .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+
+
+        & .container-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        & .container-ul {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+
+            & li {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 10px;
+
+                & a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 2px 7px;
+                    border-radius: 5px;
+
+
+                }
+            }
+
+        }
+
+        & .container-button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            & .button {
+                padding: 10px 20px;
+                border-radius: 10px;
+                border: gray 1px;
+
+                cursor: pointer;
+                border-style: double;
+            }
+        }
+
+    }
 }
 
-.message {
-  margin: 15px;
+@media (max-width: 768px) {
+    .container-header {
+        & .nav {
+            flex-direction: column;
+            align-items: center;
+
+            & .container-ul {
+                flex-direction: column;
+                align-items: center;
+
+                & li {
+                    padding: 5px 0;
+                }
+            }
+
+            & .container-button {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
 }
 
-.button {
-  color: white;
-  border: none;
-  padding: 12px 20px; /*Para poner un tamaño especifico*/
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 15PX;
-  background-color: #448c34;
-  } 
+@media (max-width: 768px) {
+    .container-header {
 
-.button:hover {
-  color: white;
-  background-color: black;
+        & .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+           
+            & .container-logo {
+                display: none;
+            }
+
+            & .container-ul {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+            }
+
+            & .container-button {
+                position: absolute;
+                bottom: 1em;
+                right: 1em;
+            }
+
+        }
+    }
 }
-
-
-    /* body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .card {
-      background-color: white;
-      border-radius: 10px;
-      padding: 30px 20px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      max-width: 400px;
-    }
-
-    .card h1 {
-      margin: 0;
-      font-size: 24px; /*Para poner un tamaño de letra especifico
-      color: #333; Para asignar color especifico a la letra
-    }
-
-    .card p {
-      color: #666;
-      margin-top: 5px;
-      margin-bottom: 20px;
-    }
-
-    .emoji {
-      font-size: 60px;
-      margin-bottom: 20px;
-    }
-
-    .message {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .button {
-      background-color: #000;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    .button:hover {
-      background-color: #333;
-    } */
