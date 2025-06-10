@@ -7,30 +7,37 @@
     <title>Response</title>
 </head>
 <body>
-    <form name="francia">
-    <h2>Pregunta 1 de 5</h2>
-    <p>¿Cual es la capital de francia?</p>
-    <label for="Opcion">
-        <input type="radio" name="respuesta">
-        Berlín
-    </label>
-    
-    <label for="Opcion">
-        <input type="radio" name="respuesta">
-        Madrid
-    </label>
-    
-    <label for="Opcion">
-        <input type="radio" name="respuesta">
-        París
-    </label>
+    <div class="scoreboard">
+        <p>Correctas: <span id="correctas">0</span></p>
+        <p>Incorrectas: <span id="incorrectas">0</span></p>
+    </div>
 
-    <label for="Opcion">
-        <input type="radio" name="respuesta">
-        Roma
-    </label>
+    <form id="quiz-form">
+        <h2>Pregunta 1 de 5</h2>
+        <p>¿Cuál es la capital de Francia?</p>
+        
+        <label>
+            <input type="radio" name="respuesta" value="incorrecta">
+            Berlín
+        </label><br>
+        
+        <label>
+            <input type="radio" name="respuesta" value="incorrecta">
+            Madrid
+        </label><br>
+        
+        <label>
+            <input type="radio" name="respuesta" value="correcta">
+            París
+        </label><br>
+        
+        <label>
+            <input type="radio" name="respuesta" value="incorrecta">
+            Roma
+        </label><br><br>
 
-    <button type="submit">siguiente pregunta</button>
+        <button type="submit">Siguiente pregunta</button>
     </form>
+    <script src="response.js"></script>
 </body>
 </html>
